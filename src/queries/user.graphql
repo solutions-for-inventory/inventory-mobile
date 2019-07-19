@@ -1,0 +1,15 @@
+query getUsers{
+  t_user {
+    password
+    user_id
+    username
+  }
+}
+
+subscription userSubscription{
+  t_user {
+    username
+    user_id
+    password
+  }
+}
